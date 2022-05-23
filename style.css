@@ -66,6 +66,20 @@ a {
     text-transform: uppercase;
     font-family: 'Slabo 27px', serif;
     font-size: 1.5em;
+    animation: apparition 1.3s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+        font-family: 'Slabo 27px', serif;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        font-family: 'Slabo 27px', serif;
+    }
 }
 
 .pagecontenu header p {
@@ -82,7 +96,18 @@ a {
 .pagecontenu .imagepresentation img {
     max-width: 100%;
     height: auto;
-   
+   animation: imageapparition 1.3s ease-out;
+}
+
+@keyframes imageapparition {
+    from {
+        opacity: 0;
+      
+    }
+    to {
+        opacity: 1;
+        
+    }
 }
 
 .pagecontenu header {
@@ -170,6 +195,7 @@ a {
     color: white;
     text-align: center;
 }
+
 
 @media screen and (max-width: 700px) {
     nav {
