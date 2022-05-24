@@ -15,6 +15,8 @@ nav {
     position: sticky;
     top: 0;
     background-color: white;
+    padding: 0 2%;
+    font-family: 'Bitter', serif;
 }
 
 nav .profil {
@@ -70,19 +72,6 @@ a {
     animation: apparition 1.3s ease-out;
 }
 
-@keyframes apparition {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-        font-family: 'Slabo 27px', serif;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-        font-family: 'Slabo 27px', serif;
-    }
-}
-
 .pagecontenu header p {
     line-height: 30px;
     color: #818181;
@@ -100,16 +89,6 @@ a {
    animation: imageapparition 1.3s ease-out;
 }
 
-@keyframes imageapparition {
-    from {
-        opacity: 0;
-      
-    }
-    to {
-        opacity: 1;
-        
-    }
-}
 
 .pagecontenu header {
     margin-top: 10%;
@@ -229,6 +208,30 @@ a {
     }
     .pagecontenu .projetexperience2 .experience2 {
         justify-content: flex-start;
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+        font-family: 'Slabo 27px', serif;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        font-family: 'Slabo 27px', serif;
+    }
+}
+
+@keyframes imageapparition {
+    from {
+        opacity: 0;
+      
+    }
+    to {
+        opacity: 1;
+        
     }
 }
 =======
